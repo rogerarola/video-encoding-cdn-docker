@@ -4,4 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-CMD ["ffmpeg", "-version"]
+ENTRYPOINT ["ffmpeg"]
+
+CMD ["-version"]
